@@ -18,6 +18,7 @@
         </ul>
       </nav>
     </header>
+    <hr/>
     <h1>This is a <em>heading</em></h1>
     <h2>This is a heading</h2>
     <h3>This is a heading</h3>
@@ -53,6 +54,13 @@
         Submit your feedback!!
       </p>
       <form method="POST" action="">
+        <label for="dropdown">Choose Topic</label>
+        <select>
+          <option>World Cup</option>
+          <option>Latest News</option>
+          <option>Politics</option>
+        </select>
+        <br/>
         <textarea name="feedback" placeholder="500 Characters max..."></textarea>
         <br/>
         <button type="submit">Submit</button>
@@ -77,6 +85,14 @@
       <div>
         <label for="bio">Bio: </label>
         <textarea name="bio" placeholder="500 Characters max..."></textarea>
+      </div>
+      <div>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="male" checked/>
+      </div>
+      <div>
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" value="female" />
       </div>
       <br/>
       <button type="submit">Submit</button>
