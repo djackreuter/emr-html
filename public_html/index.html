@@ -52,7 +52,7 @@
       <p>
         Submit your feedback!!
       </p>
-      <form>
+      <form method="POST" action="">
         <textarea name="feedback" placeholder="500 Characters max..."></textarea>
         <br/>
         <button type="submit">Submit</button>
@@ -61,7 +61,7 @@
   </section>
 
   <section class="forms">
-    <form id="form1">
+    <form method="POST" action="" id="form1">
       <div>
         <label for="name">Name: </label>
         <input type="text" name="name" placeholder="Name..." />
@@ -84,20 +84,24 @@
       <p>
         <strong>Select your favorite sport:</strong>
       </p>
-    <form id="form2">
+    <form method="POST" action="" id="form2">
       <label for="sport">Soccer</label>
       <input type="checkbox" name="soccer"/>
       <label for="sport">Basketball</label>
       <input type="checkbox" name="basketball"/>
       <label for="sport">Football</label>
       <input type="checkbox" name="football"/>
-      <label for="upload">Upload a picture</label>
       <br/>
+      <label for="upload">Upload a picture</label>
       <input type="file"/>
       <br/>
       <button type="submit">Submit</button>
     </form>
   </section>
+
+  <div class="image">
+    <img src="https://placeimg.com/300/300/any">
+  </div>
 
   <table>
     <thead>
