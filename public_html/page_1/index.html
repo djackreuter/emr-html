@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Demo</title>
-    <link rel="stylesheet" href="#"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono" rel="stylesheet">
     <script src="#"></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <ul>
           <li>
             <a href="#">Home</a>
@@ -19,12 +20,14 @@
       </nav>
     </header>
     <hr/>
-    <h1>This is a <em>heading</em></h1>
-    <h2>This is a heading</h2>
-    <h3>This is a heading</h3>
-    <h4>This is a heading</h4>
-    <h5>This is a heading</h5>
-    <h6>This is a heading</h6>
+    <div class="headings">
+      <h1>This is a <em>heading</em></h1>
+      <h2>This is a heading</h2>
+      <h3>This is a heading</h3>
+      <h4>This is a heading</h4>
+      <h5>This is a heading</h5>
+      <h6>This is a heading</h6>
+    </div>
 
   <article>
     <div>
@@ -34,10 +37,10 @@
     </div>
   </article>
 
-  <section>
+  <section class="sidebar">
     <aside>
       <p>
-        View recent articles
+        <strong>View recent articles</strong>
       </p>
       <ul>
         <li>
@@ -51,7 +54,7 @@
         </li>
       </ul>
       <p>
-        Submit your feedback!!
+        <strong>Submit your feedback!!</strong>
       </p>
       <form method="POST" action="">
         <label for="dropdown">Choose Topic</label>
