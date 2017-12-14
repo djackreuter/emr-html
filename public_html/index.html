@@ -4,8 +4,20 @@
     <meta charset="utf-8">
     <title>HTML Demo</title>
     <link rel="stylesheet" href="#"/>
+    <script src="#"></script>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <h1>This is a heading</h1>
     <h2>This is a heading</h2>
     <h3>This is a heading</h3>
@@ -13,9 +25,26 @@
     <h5>This is a heading</h5>
     <h6>This is a heading</h6>
 
-    <p>
-      Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw denim taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
-    </p>
-    
+    <div>
+      <p>
+        Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span>denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
+      </p>
+    </div>
+
+    <form>
+      <label for="name">Name: </label>
+      <input type="text" name="name" placeholder="Name..." />
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="Email..." />
+      <label for="password">Password: </label>
+      <input type="password" name="name" placeholder="Password..." />
+      <label for="bio">Bio: </label>
+      <textarea name="bio" placeholder="500 Characters max..."></textarea>
+    </form>
+
+
+    <footer>
+      <p>Copyright &copy; 2017</p>
+    </footer>
   </body>
 </html>
