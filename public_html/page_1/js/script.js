@@ -65,13 +65,6 @@ var onSubmit = function() {
     default:
       alert('please choose one or more sports');
   }
-  // if(soccer.checked || soccer.checked && basketball.checked) {
-  //   alert('Nice choice!');
-  // } else if(basketball.checked && !soccer.checked && !football.checked) {
-  //   alert('You chose basketball!');
-  // } else if(football.checked == true) {
-  //   alert('Meh.');
-  // }
 }
 // add the event listener
 button.addEventListener('click', onSubmit);
