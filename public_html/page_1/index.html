@@ -5,7 +5,6 @@
     <title>HTML Demo</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono" rel="stylesheet">
-    <script src="js/script.js"></script>
   </head>
   <body onload="addToDom();">
     <header>
@@ -106,24 +105,24 @@
       <p>
         <strong>Select your favorite sport:</strong>
       </p>
-    <form method="POST" action="" id="form2">
+    <form method="POST" action="">
       <label for="sport">Soccer</label>
-      <input type="checkbox" name="soccer"/>
+      <input id="soccer" type="checkbox" name="soccer" value="soccer"/>
       <label for="sport">Basketball</label>
-      <input type="checkbox" name="basketball"/>
+      <input id="basketball" type="checkbox" name="basketball" value="basketball"/>
       <label for="sport">Football</label>
-      <input type="checkbox" name="football"/>
+      <input id="football" type="checkbox" name="football" value="football"/>
       <br/>
       <label for="upload">Upload a picture</label>
       <input type="file"/>
       <br/>
-      <button type="submit">Submit</button>
+      <button id="submit" type="submit">Submit</button>
     </form>
   </section>
 
   <img id="img" src="https://placeimg.com/800/300/any">
 
-  <table>
+  <table onclick="hideTable();" id="table">
     <thead>
       <tr>
         <th>
@@ -238,5 +237,6 @@
     <footer>
       <p>Copyright &copy; 2017</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
