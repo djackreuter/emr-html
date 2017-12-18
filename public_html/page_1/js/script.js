@@ -1,18 +1,7 @@
-function addButton() {
-  // grab the element that the new div will go after
-  var target = document.querySelector('.headings');
-  // create the new div & give it an id
-  var button = document.createElement('button');
-  button.setAttribute('id', 'js-button');
-  // add content to the div
-  button.innerHTML = 'This was added via JS.  Click to remove';
-  // add the div to the DOM
-  target.parentNode.insertBefore(button, target.nextSibling);
+console.log('connected to js file');
+function onLoad() {
+  addContent();
 
-  removeFromDom();
-}
-
-function addToDom() {
     return new Promise((resolve) => {
         setTimeout(function() {
           addButton();
@@ -21,6 +10,36 @@ function addToDom() {
   });
 }
 
+// create a new dom element before h1
+function addContent() {
+  // Get a reference to the element in which we want to insert a new node
+  var parentElement = document.getElementById('headings');
+  // Get a reference to the first child
+  var theFirstChild = parentElement.firstChild;
+  // Create a new element
+  var newElement = document.createElement('p');
+  newElement.textContent = 'Created with JS';
+  // Insert the new element before the first child
+  parentElement.insertBefore(newElement, theFirstChild);
+}
+// create a button to add to the DOM
+function addButton() {
+  // grab the element that the new div will go after
+  var target = document.querySelector('.headings');
+  // create the new div & give it an id
+  var button = document.createElement('button');
+  // give the button an id
+  button.setAttribute('id', 'js-button');
+  // add content to the div
+  button.innerHTML = 'This was added via JS.  Click to remove';
+  // Prepend the div to the DOM after the headings
+  target.parentNode.insertBefore(button, target.nextSibling);
+
+  removeFromDom();
+}
+// create the promise
+
+// remove button from DOM
 function removeFromDom() {
   var button = document.querySelector('#js-button');
   button.addEventListener('click', function() {
