@@ -5,6 +5,7 @@
     <title>HTML Demo</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono" rel="stylesheet">
+    <script src="js/script.js"></script>
   </head>
   <body onload="addToDom();">
     <header>
@@ -116,7 +117,7 @@
       <label for="upload">Upload a picture</label>
       <input type="file"/>
       <br/>
-      <button id="submit" type="submit">Submit</button>
+      <button id="submit" onclick="onSubmit();" type="submit">Submit</button>
     </form>
   </section>
 
@@ -237,6 +238,5 @@
     <footer>
       <p>Copyright &copy; 2017</p>
     </footer>
-    <script src="js/script.js"></script>
   </body>
 </html>

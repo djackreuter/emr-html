@@ -36,7 +36,7 @@ function hideTable() {
 var button = document.getElementById('submit');
 
 // define event listener function
-var onSubmit = function() {
+function onSubmit() {
   var soccer = document.getElementById('soccer');
   var basketball = document.getElementById('basketball');
   var football = document.getElementById('football');
@@ -66,5 +66,3 @@ var onSubmit = function() {
       alert('please choose one or more sports');
   }
 }
-// add the event listener
-button.addEventListener('click', onSubmit);
