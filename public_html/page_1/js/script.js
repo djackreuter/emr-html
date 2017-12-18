@@ -1,4 +1,5 @@
 console.log('connected to js file');
+
 function onLoad() {
   addContent();
 
@@ -18,7 +19,7 @@ function addContent() {
   var theFirstChild = parentElement.firstChild;
   // Create a new element
   var newElement = document.createElement('p');
-  newElement.textContent = 'Created with JS';
+  newElement.textContent = 'Prepended before h1';
   // Insert the new element before the first child
   parentElement.insertBefore(newElement, theFirstChild);
 }
@@ -29,9 +30,10 @@ function addButton() {
   // create the new div & give it an id
   var button = document.createElement('button');
   // give the button an id
+  button.setAttribute('class', 'article');
   button.setAttribute('id', 'js-button');
   // add content to the div
-  button.innerHTML = 'This was added via JS.  Click to remove';
+  button.innerHTML = 'Appended after headings. Click to remove';
   // Prepend the div to the DOM after the headings
   target.parentNode.insertBefore(button, target.nextSibling);
 
@@ -45,6 +47,12 @@ function removeFromDom() {
   button.addEventListener('click', function() {
     button.parentNode.removeChild(button);
   });
+}
+
+// Change text content
+function changeText() {
+  var text = document.getElementById('text-content');
+  text.textContent = 'This content has been changed!';
 }
 
 function hideTable() {
