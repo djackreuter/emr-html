@@ -11,6 +11,15 @@ function onLoad() {
   });
 }
 
+// toggle headings color
+function mouseMove() {
+  document.querySelector('.headings').style.backgroundColor = 'lightskyblue';
+}
+
+function mouseOut() {
+  document.querySelector('.headings').style.backgroundColor = 'lightblue';
+}
+
 // create a new dom element before h1
 function addContent() {
   // Get a reference to the element in which we want to insert a new node
