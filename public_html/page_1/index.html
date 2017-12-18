@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Demo</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono|family=Shadows+Into+Light" rel="stylesheet">
     <script src="js/script.js"></script>
   </head>
   <body onload="onLoad();">
@@ -21,7 +21,7 @@
     </header>
     <hr/>
     <div class="headings" id="headings" onmousemove="mouseMove();" onmouseout="mouseOut();">
-      <h1 class="first-heading">This is a <em>heading</em></h1>
+      <h1 class="heading-text">click <em onclick="changeFont();">this</em> to change font</h1>
       <h2>This is a heading</h2>
       <h3>This is a heading</h3>
       <h4>This is a heading</h4>
@@ -35,8 +35,8 @@
 
   <article class="article">
     <div>
-      <p>
-        Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span class="span">denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
+      <p id="para">
+        Click <a href="#" onclick="increaseFont();"><strong>Here</strong></a> to increase font size.  Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span class="span">denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
       </p>
     </div>
   </article>

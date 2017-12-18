@@ -20,6 +20,20 @@ function mouseOut() {
   document.querySelector('.headings').style.backgroundColor = 'lightblue';
 }
 
+// change heading font
+function changeFont() {
+  document.querySelector('.heading-text').style.fontFamily = 'Shadows Into Light, cursive';
+}
+
+// increase paragraph font size
+function increaseFont() {
+  var para = document.querySelector('#para');
+  para.style.fontSize += '1rem';
+  var currentFontSize = parseFloat(para.style.fontSize);
+  console.log(currentFontSize);
+  para.style.fontSize = (currentFontSize + .1) + 'rem';
+}
+
 // create a new dom element before h1
 function addContent() {
   // Get a reference to the element in which we want to insert a new node
