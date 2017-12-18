@@ -36,6 +36,10 @@ a:hover {
   margin: 4rem 1rem 1rem 1rem;
 }
 
+.toggledFont {
+  font-family: 'Shadows Into Light, cursive';
+}
+
 .article {
   margin: 0 1rem;
 }
