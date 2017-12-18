@@ -20,10 +20,17 @@ function mouseOut() {
   document.querySelector('.headings').style.backgroundColor = 'lightblue';
 }
 
-// change heading font
-function changeFont() {
-  document.querySelector('.heading-text').style.fontFamily = 'Shadows Into Light, cursive';
+var interval = setInterval(function() {
+  toggle()
+}, 3000);
+
+function toggle() {
+  document.querySelector('.heading-text').classList.toggle('toggledFont');
 }
+
+// setInterval(function() {
+//       document.querySelector('.heading-text').classList.toggle('toggledFont');
+// }, 3000);
 
 // increase paragraph font size
 function increaseFont() {
