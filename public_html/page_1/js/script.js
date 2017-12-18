@@ -39,7 +39,6 @@ function addButton() {
 
   removeFromDom();
 }
-// create the promise
 
 // remove button from DOM
 function removeFromDom() {
@@ -55,15 +54,19 @@ function changeText() {
   text.textContent = 'This content has been changed!';
 }
 
+// hide EPL table
 function hideTable() {
   document.getElementById('table').style.display = 'none';
 }
 
-// store element in variable
-var button = document.getElementById('submit');
+function showImg() {
+  var img = document.getElementById('img');
+  img.style.visibility = 'visible';
+}
 
 // define event listener function
 function onSubmit() {
+  var button = document.getElementById('submit');
   var soccer = document.getElementById('soccer');
   var basketball = document.getElementById('basketball');
   var football = document.getElementById('football');
