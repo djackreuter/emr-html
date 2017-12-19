@@ -18,9 +18,9 @@ width: 100%;
   padding-right: 0.5rem;
 }
 
-.navbar label, select {
-  float: right;
-  padding-right: 0.5rem;
+.selects {
+  position: relative;
+  bottom: 2rem;
 }
 
 a, ul {
