@@ -3,7 +3,9 @@ $(document).ready(function() {
 
   // prepend div above headings
   setTimeout(function() {
-    var $div = $('<div>', {id: 'jquery-div'});
+    var $div = $('<div>', {
+      id: 'jquery-div'
+    });
     $div.text('this div was prepended with jQuery!');
     $('.headings').prepend($div);
   }, 2000);
@@ -11,7 +13,7 @@ $(document).ready(function() {
   // change background color on mouse in
   $('.headings').mousemove(function() {
     var $headings = $('.headings');
-    $headings.css('background-color','lightskyblue');
+    $headings.css('background-color', 'lightskyblue');
     $headings.mouseout(function() {
       $headings.css('background-color', 'lightblue');
     });
@@ -34,6 +36,30 @@ $(document).ready(function() {
     $currentFontSize = $currentFontSize + 1 + 'px';
     $('#para').css('font-size', $currentFontSize);
   });
+
+  // append button after heading
+  setTimeout(function() {
+    var $button = $('<button>', {
+      id: 'jquery-button'
+    });
+    $button.text('Appended with jQuery! Click to remove');
+    $('.headings').append($button);
+    $('#jquery-button').click(function() {
+      $('#jquery-button').remove();
+    });
+  }, 2000);
+
+  // change text content
+  $('#text-content').click(function() {
+    $('#text-content').text('jQuery changed this content!');
+  });
+
+  // hide EPL table
+  $('#table').click(function() {
+    $('#table').hide();
+  });
+
+  
 
 
 
