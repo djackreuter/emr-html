@@ -96,13 +96,20 @@ $(document).ready(function() {
     }
   });
 
-  // choose Theme
+  // Dark Theme
   $('#select-menu').change(function() {
     var result = $(this).find(":selected").val();
     if(result === 'dark') {
       $('.body').toggleClass('dark-body');
       $('.header, .footer').toggleClass('dark-nav-footer');
       $('.dark-theme').toggleClass('dark-nav-headings');
+      $('.headings').toggleClass('dark-heading');
+      $('.headings').mousemove(function() {
+        $(this).css('background-color', 'darkslateblue');
+        $(this).mouseout(function() {
+          $(this).css('background-color', 'mediumslateblue');
+        });
+      });
     }
   });
 

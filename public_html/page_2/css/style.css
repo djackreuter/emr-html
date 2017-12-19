@@ -152,3 +152,7 @@ footer > p {
 .dark-nav-headings {
   color: snow;
 }
+
+.dark-heading {
+  background-color: mediumslateblue;
+}
