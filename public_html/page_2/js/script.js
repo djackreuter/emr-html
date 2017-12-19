@@ -59,10 +59,42 @@ $(document).ready(function() {
     $('#table').hide();
   });
 
-  
+  // show image
+  $('#img-button').click(function() {
+    $('#img').css('visibility', 'visible');
+  });
 
-
-
+  // sports form
+  $('#submit').click(function() {
+    var $soccer = $('#soccer');
+    var $basketball = $('#basketball');
+    var $football = $('#football');
+    switch (true) {
+      case $soccer.prop('checked') && !$basketball.prop('checked') && !$football.prop('checked'):
+        alert('You chose soccer!');
+        break;
+      case $basketball.prop('checked') && !$soccer.prop('checked') && !$football.prop('checked'):
+        alert('You chose basketball!');
+        break;
+      case $football.prop('checked') && !$soccer.prop('checked') && !$basketball.prop('checked'):
+        alert('You chose football!');
+        break;
+      case $soccer.prop('checked') && $basketball.prop('checked') && !$football.prop('checked'):
+        alert('you chose soccer and basketball!');
+        break;
+      case $soccer.prop('checked') && $football.prop('checked') && !$basketball.prop('checked'):
+        alert('you chose soccer and football!');
+        break;
+      case $basketball.prop('checked') && $football.prop('checked') && !$soccer.prop('checked'):
+        alert('you chose basketball and football!');
+        break;
+      case $football.prop('checked') && $soccer.prop('checked') && $basketball.prop('checked'):
+        alert('you like it all!');
+        break;
+      default:
+        alert('please choose one or more sports');
+    }
+  });
 
 
 });
