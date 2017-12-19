@@ -22,6 +22,20 @@ $(document).ready(function() {
     $('.heading-text').toggleClass('toggledFont');
   }, 3000);
 
+  // toggle Modal
+  var $modal = $('#modal-toggle');
+  $modal.click(function() {
+    $('.info-form').toggleClass('toggledModal');
+  });
+
+  // increase font size
+  $('#font-change').click(function() {
+    var $currentFontSize = parseFloat($('#para').css('font-size'));
+    $currentFontSize = $currentFontSize + 1 + 'px';
+    $('#para').css('font-size', $currentFontSize);
+  });
+
+
 
 
 
