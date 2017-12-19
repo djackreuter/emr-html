@@ -36,10 +36,6 @@ a:hover {
   margin: 4rem 1rem 1rem 1rem;
 }
 
-.toggledFont {
-  font-family: 'Shadows Into Light, cursive';
-}
-
 .article {
   margin: 0 1rem;
 }
@@ -67,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 72%;
   height: 14.6rem;
   background-color: lightgray;
+  display: none;
 }
 
 .user-input {
@@ -115,6 +112,16 @@ table {
 table, th, td {
   border: 1px solid black;
 }
+
+/* toggled css */
+.toggledFont {
+  font-family: 'Shadows Into Light, cursive';
+}
+
+.toggledModal {
+  display: block;
+}
+
 
 /* Footer */
 footer {

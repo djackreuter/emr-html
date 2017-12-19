@@ -28,9 +28,9 @@ function toggle() {
   document.querySelector('.heading-text').classList.toggle('toggledFont');
 }
 
-// setInterval(function() {
-//       document.querySelector('.heading-text').classList.toggle('toggledFont');
-// }, 3000);
+function toggleModal() {
+  document.querySelector('.info-form').classList.toggle('toggledModal');
+}
 
 // increase paragraph font size
 function increaseFont() {
