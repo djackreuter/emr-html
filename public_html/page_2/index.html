@@ -8,16 +8,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header">
       <nav class="navbar">
         <ul>
           <li>
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
-            <a href="../page_2/index.html">Page 2</a>
+            <a class="dark-theme" href="#">Home</a>
+            <a class="dark-theme" href="#">Contact</a>
+            <a class="dark-theme" href="../page_2/index.html">Page 2</a>
           </li>
         </ul>
+        <select id="select-menu">
+          <option value="default" selected>Default</option>
+          <option value="dark">Dark</option>
+        </select>
+        <label class="dark-theme" for="dropdown">Choose Theme</label>
       </nav>
     </header>
     <hr/>
@@ -30,14 +35,14 @@
       <h6>This is a heading</h6>
     </div>
 
-    <p class="article" id="text-content">
+    <p class="article dark-theme" id="text-content">
       Click to change text content.
     </p>
 
   <article class="article">
     <div>
-      <p id="para">
-        Click <a id="font-change" href="#"><strong>Here</strong></a> to increase font size.  Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span class="span">denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
+      <p id="para" class="dark-theme">
+        Click <a id="font-change" class="dark-theme" href="#"><strong>Here</strong></a> to increase font size.  Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span class="span">denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
       </p>
     </div>
   </article>
@@ -243,7 +248,7 @@
   </table>
 
 
-    <footer>
+    <footer class="footer dark-theme">
       <p>Copyright &copy; 2017</p>
     </footer>
   </body>

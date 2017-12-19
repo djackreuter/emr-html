@@ -18,6 +18,11 @@ width: 100%;
   padding-right: 0.5rem;
 }
 
+.navbar label, select {
+  float: right;
+  padding-right: 0.5rem;
+}
+
 a, ul {
   text-decoration: none;
   list-style: none;
@@ -132,4 +137,18 @@ footer {
 
 footer > p {
   padding: 0.6rem 0.6rem;
+}
+
+/* DARK THEME */
+.dark-body {
+  /* background-color: #25292B; */
+  background-color: darkslategray;
+}
+
+.dark-nav-footer {
+  background-color: #25292B;
+}
+
+.dark-nav-headings {
+  color: snow;
 }

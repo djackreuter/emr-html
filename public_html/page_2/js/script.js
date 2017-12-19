@@ -96,5 +96,17 @@ $(document).ready(function() {
     }
   });
 
+  // choose Theme
+  $('#select-menu').change(function() {
+    var result = $(this).find(":selected").val();
+    if(result === 'dark') {
+      $('.body').toggleClass('dark-body');
+      $('.header, .footer').toggleClass('dark-nav-footer');
+      $('.dark-theme').toggleClass('dark-nav-headings');
+    }
+  });
+
+
+
 
 });
