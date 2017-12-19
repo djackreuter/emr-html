@@ -1,43 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>Box Model Demo</title>
+    <title>HTML Demo</title>
+    <link rel="stylesheet" href="#"/>
+    <script src="#"></script>
   </head>
   <body>
-    <div class="margin">
-      Margin
-      <div class="border-padding">
-        Border &amp; Padding
-        <div class="content">
-          Content
-        </div>
-      </div>
-    </div>
-    <div class="text">
-      <p>
-        Content: width = 300px height = 200px
-      </p>
-      <p>
-        Border: 1px
-      </p>
-      <p>
-        Padding: Left &amp; Right = 10px Top &amp; Bottom = 8px
-      </p>
-      <p>
-        Margin: 10px
-      </p>
-      <p>
-        <strong>Width: 342px</strong>
-      </p>
-      <p>
-        <strong>Height: 238px</strong>
-      </p>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr/>
+    <h1>This is a <em>heading</em></h1>
+    <h2>This is a heading</h2>
+    <h3>This is a heading</h3>
+    <h4>This is a heading</h4>
+    <h5>This is a heading</h5>
+    <h6>This is a heading</h6>
 
-    <div class="box-model-demo">
-      
+  <article>
+    <div>
+      <p>
+        Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span>denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
+      </p>
     </div>
+  </article>
+
+  <section>
+    <aside>
+      <p>
+        View recent articles
+      </p>
+      <ul>
+        <li>
+          <a href="#">World Cup</a>
+        </li>
+        <li>
+          <a href="#">Latest News</a>
+        </li>
+        <li>
+          <a href="#">Politics</a>
+        </li>
+      </ul>
+      <p>
+        Submit your feedback!!
+      </p>
+      <form method="POST" action="">
+        <label for="dropdown">Choose Topic</label>
+        <select>
+          <option>World Cup</option>
+          <option>Latest News</option>
+          <option>Politics</option>
+        </select>
+        <br/>
+        <textarea name="feedback" placeholder="500 Characters max..."></textarea>
+        <br/>
+        <button type="submit">Submit</button>
+      </form>
+    </aside>
+  </section>
+
+  <section class="forms">
+    <form method="POST" action="" id="form1">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="Name..." />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Email..." />
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" name="name" placeholder="Password..." />
+      </div>
+      <div>
+        <label for="bio">Bio: </label>
+        <textarea name="bio" placeholder="500 Characters max..."></textarea>
+      </div>
+      <div>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="male" checked/>
+      </div>
+      <div>
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" value="female" />
+      </div>
+      <br/>
+      <button type="submit">Submit</button>
+    </form>
+      <p>
+        <strong>Select your favorite sport:</strong>
+      </p>
+    <form method="POST" action="" id="form2">
+      <label for="sport">Soccer</label>
+      <input type="checkbox" name="soccer"/>
+      <label for="sport">Basketball</label>
+      <input type="checkbox" name="basketball"/>
+      <label for="sport">Football</label>
+      <input type="checkbox" name="football"/>
+      <br/>
+      <label for="upload">Upload a picture</label>
+      <input type="file"/>
+      <br/>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div class="image">
+    <img src="https://placeimg.com/300/300/any">
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Team
+        </th>
+        <th>
+          Wins
+        </th>
+        <th>
+          Draws
+        </th>
+        <th>
+          Losses
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- team -->
+        <td>
+          Manchester City
+        </td>
+        <!-- wins -->
+        <td>
+          16
+        </td>
+        <!-- draws -->
+        <td>
+          1
+        </td>
+        <!-- losses -->
+        <td>
+          0
+        </td>
+      </tr>
+      <tr>
+        <!-- team -->
+        <td>
+          Manchester United
+        </td>
+        <!-- wins -->
+        <td>
+          12
+        </td>
+        <!-- draws -->
+        <td>
+          2
+        </td>
+        <!-- losses -->
+        <td>
+          3
+        </td>
+      </tr>
+      <tr>
+        <!-- team -->
+        <td>
+          Chelsea
+        </td>
+        <!-- wins -->
+        <td>
+          11
+        </td>
+        <!-- draws -->
+        <td>
+          2
+        </td>
+        <!-- losses -->
+        <td>
+          4
+        </td>
+      </tr>
+      <tr>
+        <!-- team -->
+        <td>
+          Tottenham
+        </td>
+        <!-- wins -->
+        <td>
+          9
+        </td>
+        <!-- draws -->
+        <td>
+          4
+        </td>
+        <!-- losses -->
+        <td>
+          4
+        </td>
+      </tr>
+      <tr>
+        <!-- team -->
+        <td>
+          Liverpool
+        </td>
+        <!-- wins -->
+        <td>
+          8
+        </td>
+        <!-- draws -->
+        <td>
+          7
+        </td>
+        <!-- losses -->
+        <td>
+          2
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+    <footer>
+      <p>Copyright &copy; 2017</p>
+    </footer>
   </body>
 </html>
