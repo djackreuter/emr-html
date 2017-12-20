@@ -154,5 +154,14 @@ $(document).ready(function() {
     });
   });
 
+  $('#submit-calc').click(function() {
+    var $input1 = parseInt($('#val-1').val());
+    var $input2 = parseInt($('#val-2').val());
+    if (isNaN($input1) || isNaN($input2)) {
+      $('#result').val('Both inputs must be numbers');
+    } else {
+      $('#result').val($input1 + $input2);
+    }
+  });
 
 });
