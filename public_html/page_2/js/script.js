@@ -141,6 +141,18 @@ $(document).ready(function() {
     });
   });
 
+  // Yahoo Weather API
+  $('#weather').click(function() {
+    $.ajax({
+      url: 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22Santa%20Fe%2C%20nm%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys',
+      dataType: 'json',
+      success: function(result) {
+        $('#forcast-location').text(result.query.results.channel.description);
+        $('#forcast-high').text(result.query.results.channel.item.forecast[0].high);
+        $('#forcast-text').text(result.query.results.channel.item.forecast[0].text);
+      }
+    });
+  });
 
 
 });
