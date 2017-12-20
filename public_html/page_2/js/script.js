@@ -99,7 +99,7 @@ $(document).ready(function() {
   // Dark Theme
   $('#select-menu').change(function() {
     var $theme = $(this).find(":selected").val();
-    if($theme === 'dark') {
+    if ($theme === 'dark') {
       $('.body').toggleClass('dark-body');
       $('.header, .footer').toggleClass('dark-nav-footer');
       $('.dark-theme').toggleClass('dark-nav-headings');
@@ -117,22 +117,29 @@ $(document).ready(function() {
   $('#font-select').change(function() {
     var $font = $(this).find(":selected").val();
     var $setFont = $('*');
-    if($font === 'times') {
+    if ($font === 'times') {
       $setFont.css('font-family', 'times');
     }
-    if($font === 'tahoma') {
+    if ($font === 'tahoma') {
       $setFont.css('font-family', 'tahoma');
     }
-    if($font === 'arial') {
+    if ($font === 'arial') {
       $setFont.css('font-family', 'arial');
     }
-    if($font === 'verdana') {
+    if ($font === 'verdana') {
       $setFont.css('font-family', 'verdana');
     }
-
-    
   });
 
+  // Bacon API
+  $('#bacon').click(function() {
+    $.ajax({
+      url: 'https://baconipsum.com/api/?type=meat-and-filler&paras=4&format=text',
+      success: function(result) {
+        $('.bacon-here').text(result);
+      }
+    });
+  });
 
 
 
