@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Demo</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono|family=Shadows+Into+Light" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-  </head>
-  <body class="body">
-    <header class="header">
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a class="dark-theme" href="#">Home</a>
-            <a class="dark-theme" href="#">Contact</a>
-            <a class="dark-theme" href="../page_2/index.html">Page 2</a>
-          </li>
-        </ul>
-        <div class="selects">
-          <label class="dark-theme" for="dropdown">Choose Theme</label>
-          <select id="select-menu">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Demo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|family=Roboto+Mono|family=Shadows+Into+Light" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a class="dark-theme" href="#">Home</a>
+          <a class="dark-theme" href="#">Contact</a>
+          <a class="dark-theme" href="../page_2/index.html">Page 2</a>
+        </li>
+      </ul>
+      <div class="selects">
+        <label class="dark-theme" for="dropdown">Choose Theme</label>
+        <select id="select-menu">
             <option value="default" selected>Default</option>
             <option value="dark">Dark</option>
           </select>
-          <label class="dark-theme" for="dropdown">Or Font</label>
-          <select id="font-select">
+        <label class="dark-theme" for="dropdown">Or Font</label>
+        <select id="font-select">
             <option value="default" selected>Font</option>
             <option value="times">Times</option>
             <option value="tahoma">Tahoma</option>
             <option value="arial">Arial</option>
             <option value="verdana">Verdana</option>
           </select>
-        </div><!-- /.selects -->
-      </nav>
-    </header>
-    <hr/>
-    <div class="headings dark-headings" id="headings">
-      <h1 class="heading-text">This font changes every 3 seconds!</h1>
-      <h2>This is a heading</h2>
-      <h3>This is a heading</h3>
-      <h4>This is a heading</h4>
-      <h5>This is a heading</h5>
-      <h6>This is a heading</h6>
-    </div>
+      </div>
+      <!-- /.selects -->
+    </nav>
+  </header>
+  <hr/>
+  <div class="headings dark-headings" id="headings">
+    <h1 class="heading-text">This font changes every 3 seconds!</h1>
+    <h2>This is a heading</h2>
+    <h3>This is a heading</h3>
+    <h4>This is a heading</h4>
+    <h5>This is a heading</h5>
+    <h6>This is a heading</h6>
+  </div>
 
-    <p class="article dark-theme" id="text-content">
-      Click to change text content.
-    </p>
+  <p class="article dark-theme" id="text-content">
+    Click to change text content.
+  </p>
 
   <article class="article">
     <div>
       <p id="para" class="dark-theme">
-        Click <a id="font-change" class="dark-theme" href="#"><strong>Here</strong></a> to increase font size.  Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span class="span">denim</span> taxidermy palo santo waistcoat. Glossier fanny pack iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
+        Click <a id="font-change" class="dark-theme" href="#"><strong>Here</strong></a> to increase font size. Locavore cornhole poutine, photo booth tousled raw denim salvia. Hot chicken wolf twee, humblebrag venmo fam brooklyn 3 wolf moon gochujang
+        meh gentrify taxidermy tumblr. Trust fund shabby chic blue bottle pour-over ethical salvia. Pug cliche authentic twee, portland gluten-free fam vexillologist raw <span class="span">denim</span> taxidermy palo santo waistcoat. Glossier fanny pack
+        iPhone, jean shorts occupy polaroid gentrify lyft vexillologist raw denim 8-bit shoreditch. Kitsch meggings neutra hot chicken, banjo small batch chillwave.
       </p>
     </div>
   </article>
@@ -119,23 +124,23 @@
         <input type="radio" name="gender" value="female" />
       </div>
       <br/>
-      <button id="modal-button"type="submit">Submit</button>
+      <button id="modal-button" type="submit">Submit</button>
     </form>
   </section>
   <section class="sports-form">
-      <p>
-        <strong>Select your favorite sport:</strong>
-      </p>
+    <p>
+      <strong>Select your favorite sport:</strong>
+    </p>
     <form method="POST" action="">
       <label for="sport">Soccer</label>
-      <input id="soccer" type="checkbox" name="soccer" value="soccer"/>
+      <input id="soccer" type="checkbox" name="soccer" value="soccer" />
       <label for="sport">Basketball</label>
-      <input id="basketball" type="checkbox" name="basketball" value="basketball"/>
+      <input id="basketball" type="checkbox" name="basketball" value="basketball" />
       <label for="sport">Football</label>
-      <input id="football" type="checkbox" name="football" value="football"/>
+      <input id="football" type="checkbox" name="football" value="football" />
       <br/>
       <label for="upload">Upload a picture</label>
-      <input type="file"/>
+      <input type="file" />
       <br/>
       <button id="submit" type="submit">Submit</button>
     </form>
@@ -257,9 +262,12 @@
     </tbody>
   </table>
 
+  <button id="bacon" type="submit">Give me bacon</button>
+  <div class="bacon-here dark-theme"></div>
 
-    <footer class="footer dark-theme">
-      <p>Copyright &copy; 2017</p>
-    </footer>
-  </body>
+  <footer class="footer dark-theme">
+    <p>Copyright &copy; 2017</p>
+  </footer>
+</body>
+
 </html>
